@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage ('Print file content') {
            steps {
-               echo 'handy.txt'
+               sh 'cat handy.txt'
            }
      }      
   }
