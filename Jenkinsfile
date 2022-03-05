@@ -1,5 +1,5 @@
 pipeline {
-  agent ( node { label 'master' } }
+  agent { node { label 'master' } }
          
   stages {
      stage ('Print file content'} {
@@ -7,5 +7,5 @@ pipeline {
                cat handy.txt
            }
      }      
-                }
+                
 }
