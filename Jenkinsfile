@@ -7,5 +7,6 @@ pipeline {
                cat handy.txt
            }
      }      
+  }
                 
 }
