@@ -8,19 +8,19 @@ pipeline {
   }
          
   stages {
-    stage ('Print handy content') {
+    stage ('print handy content') {
            steps {
                sh 'cat handy.txt'
            }
      }      
     
-    stage ('Read hearty content') {
+    stage ('print hearty content') {
            steps {
              sh "cat ${params.filename}"
            }
      }
     
-     stage ('Read from choice') {
+     stage ('print from choice') {
            steps {
              sh "cat ${params.filelist}.txt"
            }
