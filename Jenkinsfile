@@ -15,7 +15,7 @@ pipeline {
     
     stage ('Read hearty content') {
            steps {
-             sh 'cat ${params.filename}'
+             sh "cat ${params.filename}"
            }
        }
     
