@@ -8,9 +8,9 @@ pipeline {
            }
      }      
     
-    stage ('Read smurfet content') {
+    stage ('Read hearty content') {
            steps {
-              sh 'cat smurfet.txt'
+              sh 'cat hearty.txt'
            }
        }
     
