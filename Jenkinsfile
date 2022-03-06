@@ -1,5 +1,10 @@
 pipeline {
+  
   agent { node { label 'master' } }
+  
+  parameters {
+   string(name: 'filename', defaultValue: '', description: 'Please enter file name') 
+  }
          
   stages {
     stage ('Print handy content') {
@@ -10,7 +15,7 @@ pipeline {
     
     stage ('Read hearty content') {
            steps {
-              sh 'cat hearty.txt'
+             sh 'cat ${params.filename}'
            }
        }
     
